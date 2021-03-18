@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main-title">Generate Password</div>
+        <section class="section password">
+            <div class="sub-title">Generated Password</div>
+            <div class="generated-password"></div>
+        </section>
+        <section class="section length">
+            <div class="sub-title">Length: 10</div>
+            <div class="slider">
+                <span>4</span>
+                <input type="range" class="range" min="4" max="32" value="10">
+                <span>32</span>
+            </div>
+        </section>
+        <section class="section settings">
+            <div class="setting">
+                <span>
+                    Include UpperCase
+                </span>
+                <div class="checkbox-container">
+                    <input type="checkbox" class="checkbox" id="uppercase">
+                </div>
+            </div>
+            <div class="setting">
+                <span>
+                   Numbers
+                </span>
+                <div class="checkbox-container">
+                    <input type="checkbox" class="checkbox" id="numbers">
+                </div>
+            </div>
+            <div class="setting">
+                <span>
+                   Include symbols
+                </span>
+                <div class="checkbox-container" >
+                    <input type="checkbox" class="checkbox" id="symbols">
+                </div>
+            </div>
+        </section>
+        <div class="btn-generate">
+            Generate Password
+        </div>
+    </div>
+    <div class="notification">
+        Bu bir bildirim örneğidir
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
